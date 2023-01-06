@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fragment+Mono&display=swap");
+
+//HELPËRS
+$bg-color: #282c35;
+.flex {
+  display: flex;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  background-color: #0b1120;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+  list-style-type: none;
+  font-family: "Fragment Mono", monospace;
+  -webkit-user-select: none; /* Chrome all / Safari all */
+  -moz-user-select: none; /* Firefox all */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+}
+
+body {
+  overflow: hidden;
+  background: #131418;
+}

@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="work-container row">
+    <div class="col-8 front-end-container-left">
+      <div class="card-container row">
+        <h2>front-end projects</h2>
+        <hr />
+        <div class="col-4 card" *ngFor="let project of getProjects()">
+          <div class="content-container">
+            <h3>{{ project.name }}</h3>
+            <hr />
+            <p>{{ project.description }}</p>
+            <img src="{{ project.image }}" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-3 back-end-container-right">
+      <div class="card-container-right">
+        <h2>back-end projects</h2>
+        <hr />
+        <div
+          class="col-12 back-end-card"
+          *ngFor="let project of getBackEndProjects()"
+        >
+          <div class="content-container-right">
+            <h3>{{ project.name }}</h3>
+            <hr />
+            <p>{{ project.description }}</p>
+            <img src="{{ project.image }}" alt="" />
+          </div>
+        </div>
+      </div>
+      <p>BACK END</p>
+    </div>
+  </div>
+</div>

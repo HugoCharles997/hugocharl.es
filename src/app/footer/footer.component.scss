@@ -1,0 +1,78 @@
+.footer-wrapper {
+  position: relative;
+}
+
+.footer-container {
+  position: absolute;
+  top: 63vh;
+  left: 9vw;
+}
+
+.left-side-footer {
+  color: #282c35;
+  background: rgb(255, 252, 247);
+  margin: 4vh auto;
+  position: relative;
+  height: 10vh;
+}
+.left-side-footer::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: calc(
+    100% - 4px
+  ); /* Set the width of the pseudo-element to be slightly smaller than the rectangle div */
+  height: calc(
+    100% - 4px
+  ); /* Set the height of the pseudo-element to be slightly smaller than the rectangle div */
+  background: #efc2d5;
+}
+.right-side-footer {
+  color: #282c35;
+  background: rgb(255, 252, 247);
+  margin: 4vh auto;
+  position: relative;
+  height: 10vh;
+
+  p {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+  }
+}
+
+.right-side-footer::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: calc(
+    100% - 4px
+  ); /* Set the width of the pseudo-element to be slightly smaller than the rectangle div */
+  height: calc(
+    100% - 4px
+  ); /* Set the height of the pseudo-element to be slightly smaller than the rectangle div */
+  background: #efc2d5;
+}
+
+////ICONS MEDIA
+///
+
+i {
+  font-size: 2.5em;
+  margin-left: 10%;
+  margin-top: 3%;
+  padding: 2px;
+  transition: 0.15s ease-out;
+  cursor: pointer;
+
+  &:hover {
+    color: #efc2d5;
+    transform: scale(1.15);
+  }
+}
+
+//RIGHT SIDE

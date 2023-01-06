@@ -1,0 +1,55 @@
+.container {
+  width: 100%;
+}
+.header-container {
+  color: #131418;
+  background: rgb(255, 252, 247);
+  margin: 4vh auto;
+  position: relative;
+  width: 100%;
+  height: 10vh;
+}
+.header-container::before {
+  z-index: -1;
+  content: ""; /* Insert empty content */
+  position: absolute; /* Make the pseudo-element positionable */
+  left: 20px; /* Offset the pseudo-element to the right of the rectangle div */
+  top: 20px; /* Offset the pseudo-element to the bottom of the rectangle div */
+  width: calc(
+    100% - 4px
+  ); /* Set the width of the pseudo-element to be slightly smaller than the rectangle div */
+  height: calc(
+    100% - 4px
+  ); /* Set the height of the pseudo-element to be slightly smaller than the rectangle div */
+  background: #efc2d5; /* Give the pseudo-element a slightly transparent black background */
+  // opacity: 0.5; /* Reduce the opacity of the pseudo-element to make it look more like a shadow */
+  // filter: blur(
+  //   2px
+  // ); /* Add a blur effect to the pseudo-element to make it look more like a shadow */
+}
+
+.logo-container {
+  padding-top: 1vh;
+  padding-left: 3vh;
+}
+
+.navbar-container {
+  display: inline;
+}
+ul {
+  margin-top: 4.5%;
+  li {
+    display: inline-block;
+    transition: 0.1s ease;
+  }
+
+  li:hover {
+    transform: scale(1.1);
+    transform-origin: left top;
+    a {
+      transition: 0.2s ease-in;
+      padding: 3px;
+      background: #efc2d5;
+    }
+  }
+}
